@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Express Proxy Example</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <h1>Hello from <code>'*'</code> route!!</h1>
+  <form id="search">
+    <label for="username">Enter a Github Username</label>
+    <input name="username" id="username" type="text" placeholder="octocat" autofocus>
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
   <div id="app"></div>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/assets/js/index.js" type="text/javascript" charset="utf-8"></script>

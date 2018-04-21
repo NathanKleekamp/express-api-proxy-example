@@ -14,6 +14,7 @@ app.use('/api', apiRouter);
 
 // Our API routes
 apiRouter.get('/', (req, res) => res.json({ api_routes: { users: '/users:username' } }));
+
 apiRouter.get('/users/:username', (req, res) => {
   const username = req.params.username;
   axios.get(`${GITHUB}/users/${username}?access_token=${process.env.TOKEN}`)
